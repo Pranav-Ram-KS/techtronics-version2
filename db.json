@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "usersDetails": {
+    "Name": "MANI",
+    "lastName": "S S",
+    "gender": "male",
+    "date": "2004-02-17",
+    "email": "pranavram1292001@gmail.com",
+    "phone": "8754697300",
+    "address": "No-5/Seethammal Colony ,1st  street",
+    "password": "Manikandam@1",
+    "cpassword": "Manikandam@1"
+  }
+}

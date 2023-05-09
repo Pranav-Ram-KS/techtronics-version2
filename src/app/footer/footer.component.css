@@ -1,0 +1,16 @@
+footer{
+    position: sticky;
+    margin-top: 15%;
+    margin-bottom: none;
+    padding: none;
+    background-color:black;
+    margin-left: none;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    border-top-left-radius: 25px;
+}
+footer i{
+    color: rgb(255, 255, 255);
+}
