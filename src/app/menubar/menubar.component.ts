@@ -8,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class MenubarComponent implements OnInit {
 
   constructor() { }
+  login:any='';
+
 
   ngOnInit() {
+    const sessionuser=sessionStorage.getItem('loginid');
+    if(sessionuser){
+      this.login=JSON.parse(sessionuser);
+    }
   }
 
 }

@@ -4,6 +4,7 @@ import { FormBuilder, Validators, FormGroup, PatternValidator} from '@angular/fo
 import { Router } from '@angular/router';
 
 
+
 @Component({
   selector: 'app-Login',
   templateUrl: './Login.component.html',
@@ -20,12 +21,14 @@ export class LoginComponent{
 submit()
 {
   alert("OK");
-  this.http.get<any>("http://localhost:3000/usersDetails").subscribe(res=>{
+  this.http.get<any>("http://localhost:3000/userProfile").subscribe(res=>{
       const users=res.find((a:any)=>{
         return a.email===this.loginForm.value.username && a.password===this.loginForm.value.password
       });
       if(users){
         alert("Login Successfully");
+        // this.service.loginid=users;
+        sessionStorage.setItem('loginid',JSON.stringify(users));
         this.loginForm.reset();
         this.router.navigate(['home'])
       }

@@ -1,6 +1,4 @@
-
-
-  <app-header></app-header>
+<header>Register</header>
   <body>
   <div class="container">
   <form div class="form" [formGroup]="Register" (ngSubmit)="registrr()">
@@ -31,7 +29,7 @@
       <div class="form-control">
       <label>Father Name:</label><br />
       <input type="text" placeholder="Father Name" class="inp-box" formControlName="lastName" pattern="^[A-Za-z ]+$"
-        minlength="3" oninput="this.value = this.value.toUpperCase()"/>
+        minlength="1" oninput="this.value = this.value.toUpperCase()"/>
       <div class="error" *ngIf="Register.controls['lastName'].dirty">
         <p *ngIf="Register.controls['lastName'].errors?.['required']">
           Enter the field
@@ -96,7 +94,7 @@
       <br />
     </div>
   </div>
-      <!-- <h5>Educational Details</h5> -->
+      
       <div class="form-control">
       <label>Address</label><br />
   

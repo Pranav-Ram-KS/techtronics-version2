@@ -7,26 +7,35 @@ import { MenubarComponent } from './menubar/menubar.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { MobileComponent } from './mobile/mobile.component';
-import { AudioComponent } from './audio/audio.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AudioComponent } from './audio/audio.component';
+import { PeripheralsComponent } from './peripherals/peripherals.component';
+import { LaptopsComponent } from './Laptops/Laptops.component';
+import { GamingComponent } from './Gaming/Gaming.component';
+
+
+
 
 @NgModule({
-  declarations: [									
+  declarations: [																
     AppComponent,
       MenubarComponent,
       HeaderComponent,
       HomeComponent,
       MobileComponent,
-      AudioComponent,
       LoginComponent,
       AboutComponent,
       FooterComponent,
-      RegisterComponent
+      RegisterComponent,
+      AudioComponent,
+      PeripheralsComponent,
+      LaptopsComponent,
+      GamingComponent
    ],
   imports: [
     BrowserModule,

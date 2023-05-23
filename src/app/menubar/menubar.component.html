@@ -1,7 +1,15 @@
 <div class="navi">
     
+    <div class="box">
+        <a routerLink="">
+            <button class="but" href="#">
+                <i class="fa-sharp fa-solid fa-house"></i> Home
+            </button>
+        </a>
+    </div>
+
         <div class="box">
-            <a routerLink="mobile">
+            <a routerLink="/mobile">
                 <button class="but" href="#">
                     Moblie
                 </button>
@@ -16,11 +24,11 @@
             </div>
         </div>
         <div class="box">
-            <a routerLink="audio">
+            <a routerLink="/audio">
                 <button class="but" href="#">
                     Audio
                 </button>
-            </a>>
+            </a>
             <div class="content">
                 <a href="#">ANC</a>
                 <a href="#">Ear buds</a>
@@ -31,7 +39,7 @@
             </div>
         </div>
         <div class="box">
-            <a href="Pheripherals.html">
+            <a routerLink="/peripheral">
             <button class="but" href="#">
                 Peripherals
             </button>
@@ -44,7 +52,7 @@
             </div>
         </div>
         <div class="box">
-            <a href="Laptop.html">
+            <a routerLink="/laptop">
                 <button class="but">
                     Laptops
                 </button>
@@ -59,7 +67,7 @@
             </div>
         </div>
         <div class="box">
-            <a href="Gaming.html">
+            <a href="/gaming">
                 <button class="but">
                     Gaming
                 </button>
@@ -71,17 +79,18 @@
             </div>
         </div>
         <div class="box">
-            <a href="About_techtronics.html">
+            <a routerLink="/about">
                 <button class="but">
                     About us
                 </button>
             </a>
         </div>
         <div class="box">
-            <a routerLink="login">
-                <button class="but">
-                    Login
-                </button>
+            <a routerLink="/login">
+                <!-- <button class="but"> -->
+                    login
+                   <h2 style="color:aliceblue">{{login.Name}}</h2>
+                <!-- </button> -->
             </a>
         </div>
     </div>
